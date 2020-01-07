@@ -13,3 +13,8 @@ body {
     text-align: center;
     margin: 0 auto;
 }
+
+.poem {
+	margin-left: 30px;
+	font-size: 20px;
+}
