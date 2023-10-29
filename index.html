@@ -1,22 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
-    <title>Ergo Viridarium</title>
-</head>
-<body>
-    <header class="main"><h1> Ergo Viridarium</h1></header>
-    
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/739450108&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-    
-    <article class="main"> 
-        <header> 
-            <hgroup>
-                <h1> Were you expecting something different here? </h1>
-            </hgroup>
-        </header>
-</body>
+<html>
+ <head>
+   <title>Game Master Dashboard</title>
+   <style>
+   .mtask {
+   font-size: 20px;
+   }
+   #lvlsys {
+    position: fixed;
+    left: 40%;
+    bottom: 50px;
+    transform:(-50%, -50%);
+    margin: 0 auto;
+   }
+   .lvlsysxpbar {
+    height: 15px; 
+    width:400px; 
+    border-radius: 2px;
+    display: flex;
+    margin-top: 5px;
+   }
+   #cxp {
+    display: inline;
+   }
+   #clvl {
+    margin-left: 235px;
+    display: inline;
+   }
+   </style>
+ </head>
+ <body>
+  <h1 align="center">Game Master Dashboard</h1>
+  <br>
+  <br>
+  <input type="checkbox" id="task" name="start" />
+   <label class="mtask" for="start">Complete an online web dev course to develop the GM dashboard (50xp)</label>
+   <br>
+   <br>
+   <input type="checkbox" id="task" name="step 1" />
+   <label for="step 1" class="mtask">Complete the CS 50 course (500xp)</label>
+   <br>
+   <progress id="file" value="0" max="100" style="margin-left: 25px; margin-top: 10px; height: 10px; border-radius: 2px;"> 0% </progress> <br>
+   <input type="checkbox" id="task" name="l0" style="margin-left: 25px; margin-top: 20px; /> <label for="l0">Lecture 0 - Scratch (10xp)</label><br>
+   <input type="checkbox" id="task" name="l1" style="margin-left: 25px; margin-top: 20px; /> <label for="l1">Lecture 1 - C (10xp)</label><br>
+   <input type="checkbox" id="task" name="l2" style="margin-left: 25px; margin-top: 20px; /> <label for="l2">Lecture 2 - Arrays (10xp)</label><br>
+   <input type="checkbox" id="task" name="l3" style="margin-left: 25px; margin-top: 20px; /> <label for="l3">Lecture 3 - Algorithms (10xp)</label><br>
+   <input type="checkbox" id="task" name="l4" style="margin-left: 25px; margin-top: 20px; /> <label for="l4">Lecture 4 - Memory (10xp)</label><br>
+   <input type="checkbox" id="task" name="l5" style="margin-left: 25px; margin-top: 20px; /> <label for="l5">Lecture 5 - Data Structures (10xp)</label><br>
+   <input type="checkbox" id="task" name="l6" style="margin-left: 25px; margin-top: 20px; /> <label for="l6">Lecture 6 - Python (10xp)</label><br>
+   <input type="checkbox" id="task" name="l7" style="margin-left: 25px; margin-top: 20px; /> <label for="l7">Lecture 7 - SQL (10xp)</label><br>
+   <input type="checkbox" id="task" name="l8" style="margin-left: 25px; margin-top: 20px; /> <label for="l8">Lecture 8 - HTML (10xp)</label><br>
+   <input type="checkbox" id="task" name="l8.1" style="margin-left: 25px; margin-top: 20px; /> <label for="l8.1">Lecture 8.1 - Cybersecurity (10xp)</label><br>
+   <input type="checkbox" id="task" name="l9" style="margin-left: 25px; margin-top: 20px; /> <label for="l9">Lecture 9 - Flask (10xp)</label><br>
+   <input type="checkbox" id="task" name="l10" style="margin-left: 25px; margin-top: 20px; /> <label for="l10">Lecture 10 - Emoji (10xp)</label><br><br><br>
+   <div id="lvlsys">
+   <p id="cxp">Current XP: 0/100</p><p id="clvl">Level 1</p>
+   <progress class="lvlsysxpbar" value="0" max="100"> 0% </progress> <br>
+   </div>
+ </body>
 </html>
